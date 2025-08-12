@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --text-color: white;
+  --text-hovered: orange;
+  --text-active: chocolate;
+
+  --background-gradient: linear-gradient(90deg, #01070f, #0e124b, #1f9bd5) no-repeat;
+}
+
+body{
+  margin: 0;
+  background: var(--background-gradient);
+}
+
+h1{
+  font-family: Blinker, sans-serif;
+  font-size: 3em;
+  border-bottom: 3px var(--text-color) solid;
+  color: var(--text-color);
+}
+a{
+  display: inline-block;
+  font-weight: normal;
+  text-decoration: none;
+  transform :scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+a:hover{
+  color: orange;
+  transform :scale(1.2);
+  transition: transform 0.1s ease-in-out;
+}
+a:active{
+  color: chocolate;
+}
+p, .standard-text{
+  font-family: Rubik, sans-serif;
+  color: var(--text-color);
+}

@@ -1,0 +1,24 @@
+:root{
+  --header-gradient: linear-gradient(90deg, #676a6f, #6e7193, #79c3e6);
+}
+
+header{
+  background: var(--header-gradient);
+  margin: 0;
+  padding: 2.5em;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home{
+  font-size: 1.5em;
+}
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
