@@ -1,0 +1,15 @@
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3em 10em;
+  align-items: center;
+}
+
+.banner-text{
+  padding-right: 10em;
+}
+
+p{
+  text-align: justify;
+}

@@ -13,7 +13,8 @@ body{
 
 h1{
   font-family: Blinker, sans-serif;
-  font-size: 3em;
+  font-size: 4em;
+  font-weight: bold;
   border-bottom: 3px var(--text-color) solid;
   color: var(--text-color);
 }
