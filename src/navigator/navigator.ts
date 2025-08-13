@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navigator',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './navigator.css'
 })
 export class Navigator {
-
+  @Input() label!: string;
+  @Input() link!: string;
 }

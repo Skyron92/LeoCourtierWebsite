@@ -1,3 +1,7 @@
-div{
-  padding: 1em;
+.navigator{
+  padding: 0 2em;
+  border-left: 3px var(--text-color) solid;
+}
+a{
+  padding: 0.1em;
 }
