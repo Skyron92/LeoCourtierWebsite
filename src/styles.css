@@ -17,6 +17,7 @@ html{
 body{
   margin: 0;
   background: var(--background-gradient);
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -51,4 +52,5 @@ p, .standard-text{
   font-family: Rubik, sans-serif;
   color: var(--text-color);
   font-size: 1.5em;
+  text-align: justify;
 }

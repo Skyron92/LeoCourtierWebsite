@@ -4,16 +4,35 @@
       {{ projectName }}
     </h2>
     <div class="project-values">
-      <video class="item" [src]="video" controls height="360">
-      </video>
-      <p class="item">
+      @switch (contentType){
+        @case ('video'){
+          <video class="item" [src]="src" controls height="360"></video>
+        }
+        @case ('img'){
+          <img class="item" [src]="src" [alt]="src">
+        }
+        @case ('ytb'){
+          <iframe class="item" [src]="srcUrl" frameborder="0" allowfullscreen></iframe>
+        }
+      }
+      <p class="item text-block">
         {{firstParagraph}}
         <br>
         <br>
         {{secondParagraph}}
+        <br>
+        <br>
+        @if (linkToProject) {
+          <a class="standard-text" [href]="linkToProject" target="_blank">En savoir plus</a>
+        }
       </p>
-      <div class="item icons">
-
+      <div class="item icons-container">
+        @for (icon of iconsUrl; track $index){
+          <div class="icon-wrapper">
+            <img class="project-icon" [src]="getIconInfos($index)[0]" [alt]="icon" height="100" width="100" />
+            <span class="tooltip standard-text">{{getIconInfos($index)[1]}}</span>
+          </div>
+        }
       </div>
     </div>
   </div>
