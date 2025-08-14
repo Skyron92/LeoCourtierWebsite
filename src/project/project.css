@@ -1,0 +1,17 @@
+.project-container{
+  border-top: 2px var(--text-color) solid;
+  width: 100vw;
+  background: var(--project-gradient);
+  background-size: cover;
+}
+
+.project-content{
+  padding: 5em 10em;
+}
+.project-values{
+  display: flex;
+  flex-direction: row;
+}
+.item{
+  padding-right: 3em;
+}

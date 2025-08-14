@@ -6,6 +6,10 @@ header{
   background: var(--header-gradient);
   margin: 0;
   padding: 2.5em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 .menu{
   display: flex;
@@ -21,4 +25,5 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-right: 2em;
 }

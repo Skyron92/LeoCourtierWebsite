@@ -2,10 +2,11 @@ import {Component, OnInit, signal} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {Header} from '../header/header';
 import {Banner} from '../banner/banner';
+import {ProjectPanel} from '../project-panel/project-panel';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Banner],
+  imports: [RouterOutlet, Header, Banner, ProjectPanel],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

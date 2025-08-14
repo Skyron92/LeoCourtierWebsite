@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
 
 @Component({
@@ -9,6 +9,12 @@ import {NgOptimizedImage} from '@angular/common';
   templateUrl: './banner.html',
   styleUrl: './banner.css'
 })
-export class Banner {
+export class Banner implements OnInit {
 @Input() intro!: string;
+
+ngOnInit() {
+  const val = document.getElementsByClassName('content')[0].getBoundingClientRect().bottom * 2.5;
+  document.documentElement.style.setProperty('--bottom-point', val + 'px');
+  console.log(document.documentElement.style.getPropertyValue('--bottom-point'));
+}
 }

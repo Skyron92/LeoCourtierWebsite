@@ -32,6 +32,7 @@ export class Header implements OnInit {
 
       const val = `linear-gradient(90deg, ${headerColor1}, ${headerColor2}, ${headerColor3}`;
       document.documentElement.style.setProperty('--header-gradient', val);
+      document.documentElement.style.setProperty('--scrollbar-bg-color', headerColor3);
     }
   }
 

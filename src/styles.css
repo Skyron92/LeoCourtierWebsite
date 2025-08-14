@@ -4,6 +4,14 @@
   --text-active: chocolate;
 
   --background-gradient: linear-gradient(90deg, #01070f, #0e124b, #1f9bd5) no-repeat;
+  --scrollbar-bg-color: white;
+
+  --bottom-point : 0;
+  --project-gradient: linear-gradient(90deg, #213759, #2c4777, #26ceec) no-repeat;
+}
+
+html{
+  scrollbar-color: var(--text-color) var(--scrollbar-bg-color);
 }
 
 body{
@@ -11,12 +19,18 @@ body{
   background: var(--background-gradient);
 }
 
-h1{
+h1, h2, h3, h4, h5, h6{
   font-family: Blinker, sans-serif;
-  font-size: 4em;
-  font-weight: bold;
-  border-bottom: 3px var(--text-color) solid;
+  font-weight: 650;
   color: var(--text-color);
+}
+h1{
+  font-size: 4em;
+  border-bottom: 3px var(--text-color) solid;
+}
+h2{
+  font-size: 3em;
+  font-weight: 600;
 }
 a{
   display: inline-block;

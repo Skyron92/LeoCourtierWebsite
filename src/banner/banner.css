@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 3em 10em;
+  margin: 10em;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: -1;
 }
 
 .banner-text{
