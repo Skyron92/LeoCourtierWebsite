@@ -20,10 +20,15 @@ srcUrl?: SafeResourceUrl;
 firstParagraph : string = '';
 secondParagraph : string = '';
 
+ytbEmbedUrl : string='//www.youtube.com/embed/';
+
 constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
   if(this.src){
+    if(this.contentType === 'ytb'){
+      this.src = this.ytbEmbedUrl + this.src;
+    }
     const url = this.src;
     this.srcUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }

@@ -12,7 +12,9 @@
           <img class="item" [src]="src" [alt]="src">
         }
         @case ('ytb'){
-          <iframe class="item" [src]="srcUrl" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper item">
+            <iframe [src]="srcUrl" frameborder=0></iframe>
+          </div>
         }
       }
       <p class="item text-block">
