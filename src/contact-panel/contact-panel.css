@@ -1,0 +1,15 @@
+.panel{
+  background: var(--project-gradient);
+  border-radius: 15px;
+  border: 3px solid var(--text-color);
+  margin: 10em;
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0;
+}
