@@ -10,4 +10,5 @@ export class ContactButton {
 @Input() label!: string;
 @Input() icon!: string;
 @Input() url!: string;
+@Input() target?:string = "_blank";
 }
