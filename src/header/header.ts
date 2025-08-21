@@ -64,4 +64,10 @@ export class Header implements OnInit {
   rgbToHex(r: number, g: number, b: number) {
     return `#${[r, g, b].map(x => x.toString(16).padStart(2, '0')).join('')}`;
   }
+
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }

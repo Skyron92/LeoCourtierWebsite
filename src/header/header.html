@@ -3,10 +3,11 @@
     <span class="home">
       <a class="standard-text" routerLink="">Leo Courtier</a>
     </span>
-    <div class="navigation">
+    <button class="burger" (click)="toggleMenu()">☰</button>
+    <nav class="navigation" [class.open]="menuOpen">
       <app-navigator label="Projets" link="/projects"/>
       <app-navigator label="Contact" link="/contact"/>
-    </div>
+    </nav>
   </div>
 </header>
 
