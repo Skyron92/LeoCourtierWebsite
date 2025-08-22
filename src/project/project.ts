@@ -14,6 +14,7 @@ export class Project implements OnInit {
 @Input() description!: string;
 @Input() iconsUrl?: string[];
 @Input() linkToProject?: string;
+@Input() square: string = "false";
 
 srcUrl?: SafeResourceUrl;
 

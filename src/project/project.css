@@ -63,8 +63,16 @@
 }
 
 @media (max-width: 768px) {
+
+  .project-content{
+    padding: 5em 5em;
+  }
   .project-values{
     flex-direction: column;
+  }
+
+  .square{
+    width: 360px;
   }
 
   .item{

@@ -40,7 +40,7 @@ header{
 @media (max-width: 768px) {
 
   header{
-    width: 90%;
+    width: 85%;
   }
   .burger {
     display: block;

@@ -6,7 +6,12 @@
     <div class="project-values">
       @switch (contentType){
         @case ('video'){
-          <video class="item" [src]="src" controls height="360"></video>
+          @if (square==="true"){
+            <video class="item square" [src]="src" controls height="360"></video>
+          }
+          @else {
+            <video class="item" [src]="src" controls height="360"></video>
+          }
         }
         @case ('img'){
           <img class="item" [src]="src" [alt]="src">
@@ -19,12 +24,14 @@
       }
       <p class="item text-block">
         {{firstParagraph}}
-        <br>
-        <br>
-        {{secondParagraph}}
-        <br>
-        <br>
+        @if (secondParagraph){
+          <br>
+          <br>
+          {{secondParagraph}}
+        }
         @if (linkToProject) {
+          <br>
+          <br>
           <a class="standard-text" [href]="linkToProject" target="_blank">En savoir plus</a>
         }
       </p>
