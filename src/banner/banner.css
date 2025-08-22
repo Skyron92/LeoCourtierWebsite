@@ -16,3 +16,16 @@
 p{
   text-align: justify;
 }
+
+@media (max-width: 768px) {
+  .picture{
+    width: 256px;
+    height: 256px;
+  }
+  .content{
+    margin: 12em 5em 5em 5em;
+  }
+  .banner-text{
+    padding-right: 5em;
+  }
+}

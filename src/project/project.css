@@ -1,6 +1,6 @@
 .project-container{
   border-top: 2px var(--text-color) solid;
-  width: 100vw;
+  width: 100%;
   background: var(--project-gradient);
   background-size: cover;
 }
@@ -31,15 +31,14 @@
   transition: transform 0.1s ease-in-out;
 }
 .tooltip {
-  visibility: hidden;
+  display: none;
   background-color: black;
   color: white;
   text-align: center;
   padding: 4px 8px;
   border-radius: 4px;
-  position: relative;
-  left: 50%;
-  bottom: 100%;
+  position: absolute;
+
   white-space: nowrap;
   z-index: 11;
   font-size: 0.8rem;
@@ -48,7 +47,7 @@
 }
 
 .icon-wrapper:hover .tooltip {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
 
@@ -61,4 +60,24 @@
 .video-wrapper iframe {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .project-values{
+    flex-direction: column;
+  }
+
+  .item{
+    padding-right: 0;
+    padding-bottom: 1em;
+  }
+
+  .icons-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .icon-wrapper{
+    align-items: center;
+  }
 }

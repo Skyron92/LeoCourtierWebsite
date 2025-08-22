@@ -16,6 +16,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .home{
   font-size: 1em;
@@ -35,9 +36,12 @@ header{
   border: none;
   font-size: 5em;
   cursor: pointer;
-  margin-right: 1em;
 }
 @media (max-width: 768px) {
+
+  header{
+    width: 90%;
+  }
   .burger {
     display: block;
   }

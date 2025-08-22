@@ -9,15 +9,18 @@
   --bottom-point : 0;
   --project-gradient: linear-gradient(90deg, #213759, #2c4777, #26ceec) no-repeat;
 }
-
 html{
   scrollbar-color: var(--text-color) var(--scrollbar-bg-color);
 }
-
-body{
+html,body{
   margin: 0;
-  background: var(--background-gradient);
+  padding: 0;
   overflow-x: hidden;
+  min-width: 100vh;
+  width: 100%;
+}
+body{
+  background: var(--background-gradient) no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -53,4 +56,10 @@ p, .standard-text{
   color: var(--text-color);
   font-size: 1.5em;
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  body{
+    background-size: 100%;
+  }
 }
