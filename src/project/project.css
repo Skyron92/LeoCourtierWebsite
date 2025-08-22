@@ -69,6 +69,7 @@
   }
   .project-values{
     flex-direction: column;
+    align-items: center;
   }
 
   .square{
@@ -83,6 +84,7 @@
   .icons-container{
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
   }
 
   .icon-wrapper{
