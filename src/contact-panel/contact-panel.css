@@ -13,3 +13,9 @@
   justify-content: space-between;
   padding: 2em 0;
 }
+
+@media (max-width: 768px) {
+  .panel{
+    margin: 15em 3em;
+  }
+}

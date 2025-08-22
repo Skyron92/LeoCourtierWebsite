@@ -56,13 +56,13 @@ header{
     width: 15em;
     height: 11em;
     padding: 1em 1em;
-    margin-right: 5em;
     gap: 1em;
     text-align: center;
   }
 
   .navigation.open {
     display: flex;
+    border: 2px var(--text-color) solid;
   }
   .standard-text{
     font-size: 3em;
