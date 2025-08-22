@@ -54,7 +54,7 @@ constructor(private sanitizer: DomSanitizer) {}
 
   // trigger limits of the project content scale animation.
   triggerBottom : number = window.innerHeight / 5 * 5;
-  triggerTop : number = window.innerHeight / 5 * 3;
+  triggerTop : number = window.innerHeight / 5 * 2;
 
   private bindScrollEvent() {
     window.addEventListener('scroll', ()=>this.onScroll())
