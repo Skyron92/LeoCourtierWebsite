@@ -15,6 +15,5 @@ export class Banner implements OnInit {
 ngOnInit() {
   const val = document.getElementsByClassName('content')[0].getBoundingClientRect().bottom * 2.5;
   document.documentElement.style.setProperty('--bottom-point', val + 'px');
-  console.log(document.documentElement.style.getPropertyValue('--bottom-point'));
 }
 }

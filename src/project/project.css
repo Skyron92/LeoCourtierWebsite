@@ -7,6 +7,12 @@
 
 .project-content{
   padding: 5em 10em;
+  transform: scale(0.7,0.7);
+  transition: transform .5s ease;
+}
+.project-content.show{
+  transform: scale(1,1);
+  transition: transform .5s ease;
 }
 .project-values{
   display: flex;
